@@ -36,7 +36,12 @@ export async function execute(interaction: ChatInputCommandInteraction) {
   const finalMessage = `${userRequest} (message sent by user "${interaction.user.globalName})"`;
   
   const gpt = new GPT(conversation ? conversation.model : model, conversation?.contexts);
-  await gpt.sendMessage(finalMessage);
+  try{
+    await gpt.sendMessage(finalMessage);
+  } catch (e){
+    console.log(e)
+    return await interaction.editReply("An error occurred, try to change the model or retry later.")
+  }
   const gptEmbed = gpt.makeEmbed(interaction, userRequest);
 
   const thanksButton = new ButtonBuilder()

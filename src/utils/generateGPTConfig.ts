@@ -5,7 +5,7 @@ export async function generateGPTConfig() {
     const filePath = path.resolve(process.cwd(), 'gptConfig.json');
 
     const gptConfig = {
-        prompt: "",
+        prompt: "You'll act like a catboy saying uwu all the time",
         plugins: ["Browse Web", "Google Search"],
         upgradeMessage: true,
     };

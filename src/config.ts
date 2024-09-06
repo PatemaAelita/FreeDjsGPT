@@ -9,7 +9,7 @@ if (!DISCORD_TOKEN || !DISCORD_CLIENT_ID) {
 }
 
 if (!ICODING_GPT_TOKEN) {
-  throw new Error("Missing Icoding token! Please refer to README.md to retrieve one");
+  throw new Error("Missing Icoding token! Please refer to README.md to get yours!");
 }
 
 export const config = {

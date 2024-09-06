@@ -1,6 +1,6 @@
 import { EmbedBuilder, Interaction } from "discord.js";
 import { Context, sendMessageToGPT } from "services";
-import { readGPTConfig } from "utils/readGPTConfig";
+import { readGPTConfig } from "utils/manageGPTConfig";
 
 export class GPT {
   private _model: string;

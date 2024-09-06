@@ -1,6 +1,6 @@
 import axios from "axios";
 import { gptEnv } from "config";
-import { readGPTConfig } from "utils/readGPTConfig";
+import { readGPTConfig } from "utils/manageGPTConfig";
 
 const token = gptEnv.ICODING_GPT_TOKEN;
 
