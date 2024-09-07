@@ -20,13 +20,13 @@ export const updateJsonValue = (key: string, newValue: any): void => {
         if (data.hasOwnProperty(key)) {
             data[key] = newValue;
         } else {
-            throw new Error(`Clé "${key}" non trouvée dans le fichier JSON.`);
+            throw new Error(`value "${key}" not found in the config file.`);
         }
 
         fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
-        console.log(`Valeur mise à jour pour la clé "${key}" dans ${filePath}.`);
+        console.log(`the value "${key}" has been updated`);
     } catch (error) {
-        console.error(`Erreur lors de la mise à jour de la valeur : ${error.message}`);
+        console.error(`an error occurred : ${error}`);
     }
 };
 
