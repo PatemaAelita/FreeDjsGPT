@@ -13,8 +13,7 @@ A DiscordJS bot using [Icoding GPT](https://lite.icoding.ink).
 `ICODING_GPT_TOKEN :`
 >You'll first need to create an account on [Icoding](https://lite.icoding.ink), go to any conversation, send a message and retrieve your token in the developer console, network tab, message and search for "Autorization" in Request Headers. (youll get something instead of "null", do not copy "Bearer" with the token)
 
-![developper tool ](https://i.ibb.co/zrrFpdX/Capture-d-cran-2024-09-08-151458.png)
-
+[![developper console](https://iili.io/d8yG1ea.md.png)](https://freeimage.host/i/d8yG1ea)
 ---
 
 `npm run build` to generate the js file in ./dist and then `npm run start` to start the bot
