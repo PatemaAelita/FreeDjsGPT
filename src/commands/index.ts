@@ -1,4 +1,4 @@
-import * as gpt from "./sendgpt";
+import * as gpt from "./gpt/sendgpt";
 import * as configure from "./configure";
 
 export const commands = {

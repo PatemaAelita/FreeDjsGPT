@@ -1,4 +1,4 @@
-import { ActionRowBuilder, ButtonBuilder, ChatInputCommandInteraction, ModalBuilder, ModalSubmitInteraction, SlashCommandBuilder, TextInputBuilder, TextInputStyle } from "discord.js";
+import { ActionRowBuilder, ChatInputCommandInteraction, ModalBuilder, ModalSubmitInteraction, SlashCommandBuilder, TextInputBuilder, TextInputStyle } from "discord.js";
 import { updateJsonValue } from "utils/manageGPTConfig";
 
 export const data = new SlashCommandBuilder()
@@ -48,6 +48,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
                 .setCustomId('inputText')
                 .setLabel('prompt')
                 .setStyle(TextInputStyle.Paragraph)
+                .setPlaceholder('Youll act like a catboy working in a walmart...')
 
             const actionRow = new ActionRowBuilder<TextInputBuilder>().addComponents(textInput);
             modal.addComponents(actionRow);
